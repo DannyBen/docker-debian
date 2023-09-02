@@ -1,0 +1,8 @@
+services:
+  latest:
+    image: dannyben/debian
+    build: .
+
+  version:
+    image: dannyben/debian
+    command: bash -c "cat /etc/os-release |grep VERSION="
